@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>#ohjelmistofriikit Github</title>
+	<style>
+		html,
+		body {
+			height: 100%;
+		}
+
+		body {
+			background-color: #fff;
+			background: radial-gradient(circle at center, #fff 0%, #f8f8f8 75%, #ebebeb 100%);
+			color: #222;
+			font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+			font-size: 1rem;
+			line-height: 1.5;
+			margin: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		main {
+			padding: 1rem;
+			text-align: center;
+		}
+
+		h1 {
+			font-size: 2.5rem;
+			line-height: 1.1;
+			margin: 0;
+		}
+
+		@media screen and (max-width: 480px) {
+			h1 {
+				font-size: 1.5rem;
+			}
+		}
+
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+
+		p {
+			margin: 1rem 0 0 0;
+		}
+
+    .container {
+      margin-top: 2rem;
+    }
+
+    .button {
+      background-color: #4CAF50; /* Green */
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      transition-property: all;
+      transition-duration: 0.3s;
+    }
+
+    .button:hover {
+      background-color: #2f7a32; /* Green */
+    }
+
+		footer {
+			border-top: 1px solid black;
+		}
+	</style>
+</head>
+
+<body>
+	<main>
+		<h1>#ohjemistofriikit</h1>
+    <hr />
+		<p>
+      Painamalla nappi siirryt Github-kirjautumiseen.
+      <br />
+      OAuth-tietoja käytetään vain organisaatiokutsun lähettämiseen ja automaattiseen hyväksymiseen, eikä niitä tallenneta.
+    </p>
+    <div class="container">
+      <form method="get" action="/join">
+				<label class="mcui-checkbox">
+					<input type="checkbox" checked name="consentPublic">
+					Sallin että #ohjelmistofriikit Github-organisaation jäsenyyteni on näkyvillä profiilissani<br />
+					(voit piilottaa jäsenyyden myöhemmin Github-asetuksista)
+				</label>
+				
+				<!-- Pahoittelen, käytän nyt BR koska ultimaattinen laiskuus -->
+				<br />
+				<br />
+				
+				<button class="button" type="submit">
+					Tunnistautu ja liity #ohjelmistofriikit Github-organisaatioon
+				</a>
+			</form>
+    </div>
+
+		<footer class="container">
+			<p><a href="https://github.com/raikasdev/friikki-joiner">Lähdekoodi</a></p>
+
+			<p>Sivusto käyttää evästeitä vain vierailun ajaksi muistaakseen, haluatko sallia jäsenyytesi julkisuuden.</p>
+		</footer>
+	</main>
+</body>
+
+</html>
